@@ -1,0 +1,221 @@
+* {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Calibri', sans-serif; /* Set default font family */
+}
+
+body {
+    background-color: #f4f4f4; /* Light gray background for the body */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: flex-start; /* Align children to the start of the flex container */
+    align-items: center; /* Center children horizontally */
+    padding: 20px; /* Add padding around the body */
+}
+
+.container {
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width constraint */
+}
+
+.header {
+    width: 100%; /* Full width header */
+    background-color: rgb(55, 56, 61); /* Dark background color for header */
+    color: white; /* White text color */
+    padding: 50px 20px; /* Padding around header */
+    display: flex; /* Use flexbox layout */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center header content */
+    margin-bottom: 0; /* No margin at the bottom */
+    position: relative; /* Positioning context for child elements */
+}
+
+.profile-pic {
+    width: 110px; /* Fixed width for profile picture */
+    height: 110px; /* Fixed height for profile picture */
+    background-color: #ffffff; /* White background for profile picture */
+    border-radius: 50%; /* Make the profile picture circular */
+    margin-right: -30px; /* Negative margin to overlap the name */
+    overflow: hidden; /* Ensure the image stays within the circular shape */
+}
+
+.profile-pic img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Make image fill the container */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+}
+
+.header h1 {
+    font-size: 2.5em; /* Large font size for the name */
+    font-weight: normal; /* Normal font weight */
+    text-align: left; /* Align text to the left */
+    margin-left: 180px; /* Space to the left of the name */
+    margin-top: 20px; /* Space above the name */
+}
+
+.content {
+    display: flex; /* Use flexbox for content layout */
+    width: 100%; /* Full width */
+    background-color: #fff; /* White background for content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.sidebar {
+    width: 30%; /* Fixed width for sidebar */
+    background-color: rgb(237, 232, 226); /* Light background for sidebar */
+    padding: 70px 20px; /* Padding inside sidebar */
+    color: black; /* Text color for sidebar */
+    border-right: 1px solid #ffffff; /* Right border to separate from main content */
+}
+
+.sidebar h3 {
+    font-size: 1.2em; /* Font size for section headers in sidebar */
+    margin-bottom: 10px; /* Space below section headers */
+    font-weight: bold; /* Bold font for section headers */
+    color: rgb(55, 56, 61); /* Dark color for section headers */
+}
+
+.sidebar p, .sidebar ul {
+    font-size: 0.9em; /* Font size for paragraphs and lists */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Spacing between sections */
+.contact-details {
+    margin-bottom: 30px; /* Space below contact details */
+}
+
+.education {
+    margin-bottom: 30px; /* Space below education section */
+    position: relative; /* Positioning context for elements within */
+}
+
+.education h3 {
+    color: rgb(55, 56, 61); /* Dark color for education section header */
+}
+
+.education-details {
+    position: relative; /* Positioning context for education details */
+    padding-left: 20px; /* Space on the left */
+}
+
+.dot {
+    position: absolute; /* Absolute positioning for dot */
+    left: -1px; /* Position dot slightly to the right */
+    top: 7px; /* Align dot vertically */
+    width: 8px; /* Dot diameter */
+    height: 8px; /* Dot diameter */
+    background-color: rgb(55, 56, 61); /* Color for the dot */
+    border-radius: 50%; /* Make the dot circular */
+}
+
+.vertical-line {
+    position: absolute; /* Absolute positioning for vertical line */
+    left: 2px; /* Align line with dot */
+    top: 18px; /* Space from the top of the section */
+    width: 2px; /* Thickness of the line */
+    height: 45px; /* Length of the line */
+    background-color: rgb(55, 56, 61); /* Color for the line */
+}
+
+.degree {
+    margin-top: 10px; /* Space between line and degree text */
+}
+
+.degree-title {
+    font-weight: bold; /* Bold text for degree title */
+    font-size: 1.1em; /* Slightly larger font size for degree title */
+    color: rgb(55, 56, 61); /* Dark color for degree title */
+}
+
+.degree p {
+    color: rgb(55, 56, 61); /* Dark color for degree text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for skills list */
+.sidebar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove left padding */
+}
+
+.sidebar ul li {
+    margin-bottom: 8px; /* Space below each skill item */
+}
+
+/* Styles specific to contact-details section */
+.contact-details p {
+    font-size: 0.9em; /* Font size for contact details */
+    line-height: 1.6; /* Increase line height for readability */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.contact-details i {
+    background-color: rgb(55, 56, 61); /* Dark background for icons */
+    color: white; /* White color for icon */
+    border-radius: 50%; /* Circular shape for icon */
+    padding: 5px; /* Padding around icon */
+    margin-right: 10px; /* Space to the right of icon */
+    width: 20px; /* Fixed width for icon */
+    height: 20px; /* Fixed height for icon */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    font-size: 11px; /* Font size for icon */
+}
+
+.main-content {
+    width: 70%; /* Fixed width for main content */
+    padding: 70px 20px; /* Padding inside main content area */
+}
+
+.main-content h3 {
+    font-size: 1.4em; /* Font size for main section headers */
+    margin-bottom: 10px; /* Space below section headers */
+    font-weight: bold; /* Bold font for section headers */
+    border-bottom: 2px solid rgb(55, 56, 61); /* Bottom border for section headers */
+    padding-bottom: 0.1px; /* Padding below section headers */
+}
+
+.main-content p {
+    font-size: 0.9em; /* Font size for paragraphs in main content */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Increase spacing between sections */
+.summary, .work-experience, .references {
+    margin-bottom: 30px; /* Space below each main content section */
+}
+
+.main-content hr {
+    display: none; /* Hide horizontal rule */
+}
+
+.main-content .job {
+    margin-bottom: 20px; /* Space below each job entry */
+}
+
+.main-content .job h4 {
+    font-size: 1.2em; /* Font size for job title */
+    margin-bottom: 0; /* No margin below job title */
+    padding-bottom: 0; /* No padding below job title */
+}
+
+.main-content .job p.date {
+    font-size: 0.9em; /* Font size for date in job entry */
+    color: #888; /* Gray color for date */
+    margin-top: 0; /* No margin above date */
+    margin-bottom: 0; /* No margin below date */
+    padding: 0; /* No padding around date */
+}
+
+.main-content .job ul {
+    list-style-type: disc; /* Disc style for job responsibilities */
+    padding-left: 20px; /* Indentation for list items */
+}
+
+.main-content .job ul li {
+    margin-left: 20px; /* Additional margin for list items */
+}
